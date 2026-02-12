@@ -6,7 +6,10 @@
 </head>
 <body>
     <h1>Book</h1>
-    <table>
+    <a href="/create" >Create New Book</a>
+    <center></center>
+    <br><br><br>
+    <table class="book-table">
         <tr>
             <th>Title</th>
             <th>Author</th>
@@ -16,7 +19,7 @@
         <tr>
             <td><%= books[i].title %></td>
             <td><%= books[i].author %></td>
-            <td>
+            <td class="link-center">
                 <a href="/book/<%= books[i].id %>">View</a>
                 <a href="/update/<%= books[i].id %>">Edit</a>
                 <a href="/delete/<%= books[i].id %>">Delete</a>
@@ -24,6 +27,6 @@
         </tr>
         <% } %>
     </table>
-    <a href="/create">Create New Book</a>
+    
 </body>
 </html>

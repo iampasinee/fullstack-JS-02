@@ -15,8 +15,11 @@
         <br>
         <input type="submit" value="Update">
     </form>
-    <a href="/update/<%= book.id %>">Edit</a>
-    <a href="/delate/<%= book.id %>">Delete</a>
-    <a href="/">Back to List</a>
+    <div class="link-center">
+        <a href="/update/<%= book.id %>">Edit</a>
+        <a href="/delete/<%= book.id %>">Delete</a>
+        <a href="/">Back to List</a>
+    </div>
+    
 </body>
 </html>
