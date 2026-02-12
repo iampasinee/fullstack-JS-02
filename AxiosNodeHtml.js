@@ -83,6 +83,6 @@ app.get("/delate/:id", async (req, res) => {
 });
 
 const port = process.env.PORT || 5000;
-app.listen(5500, () => console.log(`app listening at http://localhost:${port}`)) 
+app.listen(5000, () => console.log(`app listening at http://localhost:${port}`)) 
 
 
