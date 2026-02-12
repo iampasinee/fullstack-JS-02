@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Book</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Update Book</h1>
+    <form action="/update/<%= book.id %>" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="<%= book.title %>">
+        <br>
+        <label for="author">Title:</label>
+        <input type="text" name="author" id="author" value="<%= book.author %>">
+        <br>
+        <input type="submit" value="Update">
+    </form>
+    <a href="/update/<%= book.id %>">Edit</a>
+    <a href="/delate/<%= book.id %>">Delete</a>
+    <a href="/">Back to List</a>
+</body>
+</html>

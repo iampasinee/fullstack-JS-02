@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const sequelize = new Sequelize('Database', 'username', 'password', {
+const sequelize = new Sequelize('database', 'username', 'password', {
     host: 'localhost',
     dialect: 'sqlite',
     storage: './Database/SQBooks.sqlite'
@@ -29,7 +29,7 @@ const Book = sequelize.define('book', {
 sequelize.sync();
 
 app.get("/", (req, res) => {
-  res.send("Hello Book World!");
+  res.send("Hello Book SequlizeSQLite!");
 });
 
 app.get('/books', (req, res) => {
